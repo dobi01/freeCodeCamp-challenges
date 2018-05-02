@@ -2,8 +2,8 @@ console.log("Is it a palindrome?\n");
 
 function palindrome(str) {
 
-  strLowerCase = str.toLowerCase();
-  strOnlyAlphanumeric  = strLowerCase.replace(/\W|[_]/g, "");
+  var strLowerCase = str.toLowerCase();
+  var strOnlyAlphanumeric  = strLowerCase.replace(/\W|[_]/g, "");
   var arrayFromStr = strOnlyAlphanumeric.split("");
   var reversedArray = arrayFromStr.slice().reverse();
 
